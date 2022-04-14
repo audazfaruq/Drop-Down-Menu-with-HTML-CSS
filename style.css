@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F2F1EE;
+    font-family: sans-serif;
+}
+
+.topMenu {
+    background: #b4a07f;
+    text-align: center;
+}
+
+.topMenu ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.topMenu ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.topMenu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.topMenu ul .active,
+.topMenu ul li:hover {
+    background: #EAD0A6;
+    border-radius: 5px;
+}
+
+.topMenu .fa {
+    margin-right: 8px;
+}
+
+.topMenu .subMenu,
+.innerSubMenu {
+    display: none;
+}
+
+.topMenu ul li:hover .subMenu {
+    display: block;
+    position: absolute;
+    background: #b4a07f;
+    border-radius: 0px 0px 5px 5px;
+    margin: 15px 0px 0px -15px;
+}
+
+.topMenu ul li:hover .subMenu ul {
+    display: block;
+    margin: 10px;
+}
+
+.topMenu ul li:hover .subMenu ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.topMenu ul li:hover .subMenu ul li:last-child {
+    border-bottom: none;
+}
+
+.topMenu ul li:hover .subMenu ul li a:hover {
+    color: gray;
+}
+
+.topMenu .subMenu .fa-angle-right {
+    float: right;
+}
+
+.topMenu .subMenu ul li:hover .innerSubMenu {
+    display: block;
+    position: absolute;
+    background: #b4a07f;
+    border-radius: 0px 5px 5px 5px;
+    margin: 0px 0px 0px 130px;
+}
